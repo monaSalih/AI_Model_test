@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Camera Object Detection</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🤖 AI Camera Object Detection</h1>
+
+        <p class="subtitle">
+            Hugging Face + YOLOv10 + Laptop Camera
+        </p>
+
+
+        <div class="camera-box">
+
+            <video
+                id="video"
+                autoplay
+                playsinline
+            ></video>
+
+            <canvas id="canvas"></canvas>
+
+        </div>
+
+
+        <div class="buttons">
+
+            <button id="startCamera">
+                📷 Start Camera
+            </button>
+
+            <button id="stopCamera">
+                ⛔ Stop Camera
+            </button>
+
+        </div>
+
+
+        <div id="status">
+            Loading AI model...
+        </div>
+
+
+        <div class="results">
+
+            <h2>Detected Objects</h2>
+
+            <div id="objects">
+                No objects detected yet.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
